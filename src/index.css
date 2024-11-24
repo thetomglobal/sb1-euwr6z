@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --netflix-red: #E50914;
+  --netflix-black: #141414;
+}
+
+body {
+  background-color: var(--netflix-black);
+  color: #FFFFFF;
+}
+
+.netflix-card {
+  @apply bg-[#1F1F1F] rounded-md shadow-lg hover:scale-105 transition-transform duration-300;
+}
+
+.netflix-button {
+  @apply bg-[#E50914] text-white font-medium px-6 py-2 rounded hover:bg-[#B81D24] transition-colors duration-300;
+}
+
+.netflix-input {
+  @apply bg-[#333333] border-none text-white rounded px-4 py-3 focus:ring-2 focus:ring-[#E50914] focus:outline-none;
+}
